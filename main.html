@@ -1,0 +1,29 @@
+<head>
+  <title>movielist</title>
+</head>
+
+<body>
+ <h2>Filmaaa</h2>
+   
+   {{>list}}
+{{>movies}}
+</body>
+
+<template name="movies">
+ {{#each movieList}}
+     {{movie}}
+{{/each}}
+</template>
+<template name="list">
+<ul id=list>
+<li class=movie>X-men</li>
+<li class=movie>Independence day</li>
+<li class=movie>Deadpool</li>
+<li class=movie>Minions</li>
+<li class=movie>Conjuring 2</li>
+</ul>
+{{inder}}
+ 
+</template>
+
+
